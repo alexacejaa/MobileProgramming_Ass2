@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/screenProgress"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:textColor="@color/numbers"
+        android:gravity="start"
+        android:maxLines="1"
+        android:textSize="40sp"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/screenResult"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:textColor="@color/numbers"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textSize="30sp"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/sqrt"
+                style="@style/SymbolsStyle"
+                android:src="@drawable/square_root"
+                android:scaleType="center"/>
+            <TextView
+                android:id="@+id/power2"
+                style="@style/SymbolsStyle"
+                android:text="x^2"/>
+            <TextView
+                android:id="@+id/power3"
+                style="@style/SymbolsStyle"
+                android:text="x^3"/>
+            <TextView
+                android:id="@+id/divide"
+                style="@style/SymbolsStyle"
+                android:text="/"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/seven"
+                style="@style/NumbersStyle"
+                android:text="7"/>
+            <TextView
+                android:id="@+id/eight"
+                style="@style/NumbersStyle"
+                android:text="8"/>
+            <TextView
+                android:id="@+id/nine"
+                style="@style/NumbersStyle"
+                android:text="9"/>
+            <TextView
+                android:id="@+id/multiply"
+                style="@style/SymbolsStyle"
+                android:text="*"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/four"
+                style="@style/NumbersStyle"
+                android:text="4"/>
+            <TextView
+                android:id="@+id/five"
+                style="@style/NumbersStyle"
+                android:text="5"/>
+            <TextView
+                android:id="@+id/six"
+                style="@style/NumbersStyle"
+                android:text="6"/>
+            <TextView
+                android:id="@+id/minus"
+                style="@style/SymbolsStyle"
+                android:text="-"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/one"
+                style="@style/NumbersStyle"
+                android:text="1"/>
+            <TextView
+                android:id="@+id/two"
+                style="@style/NumbersStyle"
+                android:text="2"/>
+            <TextView
+                android:id="@+id/three"
+                style="@style/NumbersStyle"
+                android:text="3"/>
+            <TextView
+                android:id="@+id/plus"
+                style="@style/SymbolsStyle"
+                android:text="+"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dot"
+                style="@style/NumbersStyle"
+                android:text="."/>
+            <TextView
+                android:id="@+id/zero"
+                style="@style/NumbersStyle"
+                android:text="0"/>
+            <TextView
+                android:id="@+id/clear"
+                style="@style/ClearStyle"
+                android:text="CLEAR"/>
+            <TextView
+                android:id="@+id/equal"
+                style="@style/SymbolsStyle"
+                android:text="="/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
